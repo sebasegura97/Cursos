@@ -1,0 +1,11 @@
+.Playlist {
+  overflow-x: auto;
+  /*width: 500px;*/
+  white-space: pre-wrap;
+  display: flex;
+  /*flex-wrap: wrap;*/
+  /*height: 35vh;*/
+  /*background: red;*/
+  overflow-y: hidden;
+  /*padding-bottom: 80px;*/
+}
