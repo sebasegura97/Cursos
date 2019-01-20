@@ -11,7 +11,7 @@ class About extends Component {
     handlePress = () => {
         // console.log(this.props.navigation);
         this.props.navigation.navigate('Profile', {
-            name: 'Sebastian Segura',
+            name: 'Sebastian',
         })
     }
     render(){

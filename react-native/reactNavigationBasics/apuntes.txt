@@ -1,0 +1,17 @@
+STACK ACTIONS:
+    import { StackActions } from 'react-navigation';
+    this.props.navigation.*
+
+    .navigate()
+    .goBack()
+    .addListener()
+    .isFocused()
+    .state()
+    .getParams()
+    .setParams()
+    .dispatch()
+    .push(): Agrega una pantalla al stack, sin importar si ya existia en el stack.
+    .pop(): Quita el ultimo elemento del Stack.
+    .popToPop(): Quita todos los elementos hasta el primero.
+    .replace(): Reemplaza los datos de un elemento del stack.
+    .reset(): Reemplaza el estado actual con un nuevo estado (todo el stack).+

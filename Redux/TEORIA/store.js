@@ -3,7 +3,7 @@ actualizar, obtener y escuchar datos.
   1. Contiene el estado de la aplicacion
   2. Puedes acceder al estado con el metodo getState()
   3. Puedes actualizar el estado con el metodo dispatch(action)
-  4. Escucha cambios con el metodo suscribe(listener)
+  4. Escucha cambios con el metodo subscribe(listener)
   5. Dejar de escuchar cambios retornando la funcion del metodo suscribe(listener)
 
 import { createStore } from 'redux'

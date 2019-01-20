@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import {createStackNavigator } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation';
 import Home from './src/screens/home.js'
 import About from './src/screens/about'
 import Login from './src/screens/login'
@@ -8,6 +8,7 @@ import Profile from './src/screens/profile'
 
 
 const AppNavigator = createStackNavigator(
+  // routeConfig
   {
     Home:{
       screen: Home,
@@ -20,18 +21,29 @@ const AppNavigator = createStackNavigator(
     Login,
     Profile
   },
+  // stackNavigatorConfig:
+  // title                                  headerStyle 
+  // header                                 headerForceInset
+  // headerTitle                            headerTitleStyle
+  // headerAllowFontScalling                headerTintColor
+  // headerBackImage                        headerPressColorAndroid
+  // headerBackTitle                        headerTransparent
+  // headerTruncatedBackTitle               headerBackground
+  // headerRight                            gesturesEnabled 
+  // headerLeft                             gesturesResponseDistance
+  //                                        gesturesDirection
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'Login',
     navigationOptions: {
       title: 'Un titulo generico',
       headerTitleAllowFontScaling: true,
       headerBackTitle: 'Atras',
       gesturesEnabled: true,
-      headerBackImage: <Text>🇦🇷</Text>
+      headerBackImage: <Text>🇦🇷  </Text>
       // headerBackImage: '',
       // header: <Text style={{color: 'white'}}> Esto es un header </Text>,
     },
-    initialRouteKey: 'Login',
+    initialRouteKey: 'login',
     initialRouteParams: {
       nombre: 'Sebastian Segura',
     },
@@ -56,7 +68,7 @@ const Main = createStackNavigator(
     }
   },
   {
-    mode: 'modal',
+    mode: 'card',
     headerMode: 'none'
   }
 
