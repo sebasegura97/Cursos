@@ -1,3 +1,17 @@
-<p>
-  home works!
-</p>
+
+<!-- Muestra amigos:  -->
+<p>Amigos:</p>
+<ng-container *ngFor='let user of friends; let i = index'>
+  <div *ngIf="user.friend">
+    <a routerLink='/conversation/{{user.uid}}' >
+      {{i}}. {{user.nick}} - {{user.email}}
+    </a>
+  </div>
+</ng-container>
+<!-- Lista de enemigos: -->
+<p>Enemigos:</p>
+<ng-container *ngFor='let user of friends; let i = index'>
+  <p *ngIf="!user.friend" >
+    {{i}}. {{user.nick}} - {{user.email}}
+  </p>
+</ng-container>
