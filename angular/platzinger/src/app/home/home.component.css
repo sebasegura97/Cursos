@@ -1,0 +1,15 @@
+.online {
+    color: green;
+}
+.offline {
+    color: grey;
+}
+.busy {
+    color: red;
+}
+.away {
+    color: rgb(251, 177, 21);
+}
+.iconUser{
+    font-size: 22pt;
+}

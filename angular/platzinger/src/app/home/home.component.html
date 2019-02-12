@@ -1,17 +1,13 @@
-
 <!-- Muestra amigos:  -->
+
 <p>Amigos:</p>
-<ng-container *ngFor='let user of friends; let i = index'>
-  <div *ngIf="user.friend">
+
+<input type="text" placeholder="Buscar Amigo" [(ngModel)] = "query" >
+<ng-container *ngFor='let user of friends | search: query; let i = index'>
+  <div>
+    <i class="fas fa-user-friends iconUser {{user.status}}"></i>
     <a routerLink='/conversation/{{user.uid}}' >
       {{i}}. {{user.nick}} - {{user.email}}
     </a>
   </div>
-</ng-container>
-<!-- Lista de enemigos: -->
-<p>Enemigos:</p>
-<ng-container *ngFor='let user of friends; let i = index'>
-  <p *ngIf="!user.friend" >
-    {{i}}. {{user.nick}} - {{user.email}}
-  </p>
 </ng-container>
